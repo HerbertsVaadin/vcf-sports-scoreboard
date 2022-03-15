@@ -1,0 +1,36 @@
+.sports-scoreboard {
+    background-color: var(--lumo-base-color);
+    color: var(--lumo-body-text-color);
+    border-radius: var(--lumo-border-radius-m);
+    border-color: var(--lumo-tint-10pct);
+    border-style: solid;
+    padding: var(--lumo-space-wide-s);
+    line-height: var(--lumo-line-height-s);
+    font-size: var(--lumo-font-size-m);
+    font-family: var(--lumo-font-family);
+}
+
+.sports-scoreboard .scoreboard-team-block {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.sports-scoreboard .scoreboard-team-block.winner {
+    color: var(--lumo-primary-text-color);
+    font-weight: bold;
+}
+
+.sports-scoreboard .scoreboard-team-block.loser {
+    font-weight: normal;
+}
+
+.sports-scoreboard .scoreboard-team-block .team-name-and-info {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.sports-scoreboard .scoreboard-team-block .team-name-and-info .team-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
