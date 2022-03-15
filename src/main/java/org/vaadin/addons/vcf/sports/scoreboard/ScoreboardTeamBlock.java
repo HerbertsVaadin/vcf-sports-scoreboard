@@ -20,9 +20,9 @@ public class ScoreboardTeamBlock extends Div {
         teamNameAndInfoContainer.add(teamNameContainer, teamInfoContainer);
         teamNameContainer.addClassName("team-name");
         teamInfoContainer.addClassName("team-info");
+        scoreContainer.addClassName("score");
         leadIndicatorContainer.addClassName("lead-indicator-container");
         leadIndicatorContainer.add(leadIndicator);
-        leadIndicator.setSize("16px");
 
         add(logoContainer, teamNameAndInfoContainer, leadIndicatorContainer, scoreContainer);
     }

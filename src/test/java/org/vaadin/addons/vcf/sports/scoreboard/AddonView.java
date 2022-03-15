@@ -67,9 +67,23 @@ public class AddonView extends VerticalLayout {
         });
         homeName.setValueChangeMode(ValueChangeMode.EAGER);
 
+        TextField awayInfo = new TextField("Away info");
+        awayInfo.addValueChangeListener(event -> {
+            var name = StringUtils.isEmpty(event.getValue()) ? "" : event.getValue();
+            scoreboard.setAwayTeamInfo(name);
+        });
+        awayInfo.setValueChangeMode(ValueChangeMode.EAGER);
+
+        TextField homeInfo = new TextField("Home info");
+        homeInfo.addValueChangeListener(event -> {
+            var name = StringUtils.isEmpty(event.getValue()) ? "" : event.getValue();
+            scoreboard.setHomeTeamInfo(name);
+        });
+        homeInfo.setValueChangeMode(ValueChangeMode.EAGER);
+
 
         var inputFields = new VerticalLayout();
-        inputFields.add(awayName, homeName);
+        inputFields.add(awayName, homeName, awayInfo, homeInfo);
 
         add(scoreboard, actionButtons, inputFields);
     }

@@ -17,6 +17,9 @@
 
 .sports-scoreboard .scoreboard-team-block.winner {
     color: var(--lumo-primary-text-color);
+}
+
+.sports-scoreboard .scoreboard-team-block.winner .team-name {
     font-weight: bold;
 }
 
@@ -29,8 +32,38 @@
     min-width: 0;
 }
 
+.sports-scoreboard .scoreboard-team-block {
+    flex-grow: 1;
+    min-width: 0;
+}
+
 .sports-scoreboard .scoreboard-team-block .team-name-and-info .team-name {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.sports-scoreboard .scoreboard-team-block .team-name-and-info .team-info {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: var(--lumo-font-size-xxs);
+}
+
+.sports-scoreboard.with-team-info .scoreboard-team-block {
+    align-items: center;
+}
+
+.sports-scoreboard .scoreboard-team-block.winner .score {
+    font-weight: bold;
+}
+
+.sports-scoreboard.with-team-info .scoreboard-team-block .score {
+    font-size: var(--lumo-font-size-xl);
+}
+
+.lead-indicator-container vaadin-icon {
+    width: 16px;
+    height: 16px;
+    margin-top: -3px;
 }

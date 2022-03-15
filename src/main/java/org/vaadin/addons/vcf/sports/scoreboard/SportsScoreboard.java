@@ -1,5 +1,7 @@
 package org.vaadin.addons.vcf.sports.scoreboard;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.icon.Icon;
@@ -85,10 +87,12 @@ public class SportsScoreboard extends Div {
 
     public void setHomeTeamInfo(String info) {
         homeTeamBlock.setTeamInfo(info);
+        setClassName("with-team-info", StringUtils.isNotEmpty(info));
     }
 
     public void setAwayTeamInfo(String info) {
         awayTeamBlock.setTeamInfo(info);
+        setClassName("with-team-info", StringUtils.isNotEmpty(info));
     }
 
     public void determineWinner() {
