@@ -6,6 +6,7 @@ import java.util.Random;
 import org.apache.commons.lang3.StringUtils;
 
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -80,6 +81,9 @@ public class AddonView extends VerticalLayout {
             scoreboard.setHomeTeamInfo(name);
         });
         homeInfo.setValueChangeMode(ValueChangeMode.EAGER);
+
+        scoreboard.setAwayTeamLogo(new Image("images/away.png", "Away team logo"));
+        scoreboard.setHomeTeamLogo(new Image("images/home.png", "Home team logo"));
 
 
         var inputFields = new VerticalLayout();

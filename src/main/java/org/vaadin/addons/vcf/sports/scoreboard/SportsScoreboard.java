@@ -2,6 +2,7 @@ package org.vaadin.addons.vcf.sports.scoreboard;
 
 import org.apache.commons.lang3.StringUtils;
 
+import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.icon.Icon;
@@ -93,6 +94,14 @@ public class SportsScoreboard extends Div {
     public void setAwayTeamInfo(String info) {
         awayTeamBlock.setTeamInfo(info);
         setClassName("with-team-info", StringUtils.isNotEmpty(info));
+    }
+
+    public void setHomeTeamLogo(Component logo) {
+        homeTeamBlock.setLogo(logo);
+    }
+
+    public void setAwayTeamLogo(Component logo) {
+        awayTeamBlock.setLogo(logo);
     }
 
     public void determineWinner() {

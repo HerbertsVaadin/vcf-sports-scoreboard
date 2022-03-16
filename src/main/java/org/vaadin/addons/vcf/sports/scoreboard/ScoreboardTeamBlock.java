@@ -1,5 +1,6 @@
 package org.vaadin.addons.vcf.sports.scoreboard;
 
+import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
@@ -53,5 +54,10 @@ public class ScoreboardTeamBlock extends Div {
         this.leadIndicator = leadIndicator;
         leadIndicatorContainer.removeAll();
         leadIndicatorContainer.add(leadIndicator);
+    }
+
+    public void setLogo(Component component) {
+        logoContainer.removeAll();
+        logoContainer.add(component);
     }
 }

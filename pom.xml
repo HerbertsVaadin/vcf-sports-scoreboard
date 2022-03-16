@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.vaadin.addons</groupId>
-    <artifactId>addon-flow</artifactId>
+    <artifactId>vcf-sports-scoreboard-flow</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>Add-on for Vaadin</name>
-    <description>###Project Name###</description>
+    <name>Sports Scoreboard add-on for Vaadin</name>
+    <description>Sports Scoreboard</description>
 
     <properties>
         <vaadin.version>23.0.0</vaadin.version>
