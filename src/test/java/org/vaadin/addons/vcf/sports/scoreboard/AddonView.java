@@ -85,7 +85,6 @@ public class AddonView extends VerticalLayout {
         scoreboard.setAwayTeamLogo(new Image("images/away.png", "Away team logo"));
         scoreboard.setHomeTeamLogo(new Image("images/home.png", "Home team logo"));
 
-
         var inputFields = new VerticalLayout();
         inputFields.add(awayName, homeName, awayInfo, homeInfo);
 

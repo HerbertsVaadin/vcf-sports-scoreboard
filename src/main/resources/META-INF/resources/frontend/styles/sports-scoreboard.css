@@ -27,6 +27,25 @@
     font-weight: normal;
 }
 
+.sports-scoreboard .scoreboard-team-block .logo {
+    display: flex;
+    align-items: center;
+}
+
+.sports-scoreboard .scoreboard-team-block .logo img,
+.sports-scoreboard .scoreboard-team-block .logo icon,
+.sports-scoreboard .scoreboard-team-block .logo vaadin-icon {
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.sports-scoreboard.with-team-info .scoreboard-team-block .logo img,
+.sports-scoreboard.with-team-info .scoreboard-team-block .logo icon,
+.sports-scoreboard.with-team-info .scoreboard-team-block .logo vaadin-icon {
+    max-height: 26px;
+    max-width: 26px;
+}
+
 .sports-scoreboard .scoreboard-team-block .team-name-and-info {
     flex-grow: 1;
     min-width: 0;
